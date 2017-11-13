@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gearshifthome"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        tools:context="com.example.sibertt.carmeetapplication1.Home">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Car Meets"
+            android:layout_height="wrap_content"
+            android:id="@+id/CarMeetTitle"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:textSize="56sp"
+            />
+
+        <Button
+            android:id="@+id/CarMeetNo.1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CarMeetTitle"
+            android:layout_marginTop="32dp"
+            android:background="#FFFFFF"
+            android:text="Car Meet # 1"
+            android:textSize="40sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CarMeetNo.2"
+            android:layout_marginTop="16dp"
+            android:id="@+id/CarMeetNo.3"
+            android:background="#FFFFFF"
+            android:text="Car Meet # 3"
+            android:textSize="40sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CarMeetNo.3"
+            android:layout_marginTop="16dp"
+            android:id="@+id/CarMeetNo.4"
+            android:background="#FFFFFF"
+            android:text="Car Meet # 4"
+            android:textSize="40sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CarMeetNo.4"
+            android:layout_marginTop="16dp"
+            android:id="@+id/CarMeetNo.5"
+            android:background="#FFFFFF"
+            android:text="Car Meet # 5"
+            android:textSize="40sp"/>
+
+        <Button
+            android:id="@+id/CarMeetNo.2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CarMeetNo.1"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:text="Car Meet # 2"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/CarMeetTitle"
+            android:layout_toEndOf="@+id/CarMeetTitle"
+            android:background="#FFFFFF"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical"
+
+
+            >
+            <ImageView
+                android:layout_width="80sp"
+                android:layout_height="80sp"
+                android:id="@+id/ProfilePicture"
+                android:background="@drawable/userpicture"
+                tools:ignore="ContentDescription"/>
+
+            <Button
+                android:id="@+id/MyProfileButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Profile"
+                android:textSize="12sp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/MyMessagesButton"
+                android:text="My Messages"
+                android:textSize="12sp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/MyFriendsButton"
+                android:text="My Friends"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
