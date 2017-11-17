@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">CarMeetApplication(1)</string>
+    <string name="app_name">CarMeetApplication</string>
+    <string name="carmeet1">Car Meet # 1</string>
+    <string name="carmeets">Car Meets</string>
+    <string name="carmeet2">Car Meet # 2</string>
+    <string name="carmeet3">Car Meet # 3</string>
+    <string name="carmeet4">Car Meet # 4</string>
+    <string name="carmeet5">Car Meet # 5</string>
+    <string name="myProfile">My Profile</string>
+    <string name="myMessages">My Messages</string>
+    <string name="myFriends">My Friends</string>
+    <string name="makeAMeetVert">M\na\nk\ne\n \nA\n \nM\ne\ne\nt</string>
+    <string name="createAMeet">Create A Meet</string>
+    <string name="location">Location : </string>
+    <string name="blankLine">____________________________________________</string>
+    <string name="date">Date : </string>
 </resources>
