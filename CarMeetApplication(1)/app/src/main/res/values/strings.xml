@@ -96,4 +96,7 @@
     <string name="month_prompt">Select a Month</string>
     <string name="day_prompt">Select a Day</string>
     <string name="year_prompt">Select a Year</string>
+    <string name="timeCAM">Time (24 hours): </string>
+    <string name="monthCAM">MM/DD/YYYY:</string>
+
 </resources>

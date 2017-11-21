@@ -7,16 +7,17 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp">
+
     <TextView
+        android:id="@+id/createAMeetTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/createAMeet"
         android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:background="#000000"
+        android:text="@string/createAMeet"
         android:textColor="#FFFFFF"
-        android:textSize="42sp"
-        android:id="@+id/createAMeetTV"/>
+        android:textSize="42sp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,19 +31,20 @@
         android:layout_alignParentStart="true"
         android:id="@+id/CAMlz"
         android:background="#FFFFFF"/>
+
     <TextView
+        android:id="@+id/LZblankLine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/blankLine"
-        android:textSize="16sp"
-        android:background="#FFFFFF"
-        android:layout_toRightOf="@+id/CAMlz"
-        android:layout_below="@+id/createAMeetTV"
+        android:layout_alignBottom="@+id/CAMlz"
+        android:layout_alignEnd="@+id/yearSpinner"
+        android:layout_alignRight="@+id/yearSpinner"
+        android:layout_alignTop="@+id/CAMlz"
         android:layout_toEndOf="@+id/CAMlz"
-        android:layout_marginRight="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="16dp"
-        android:id="@+id/LZblankLine"/>
+        android:layout_toRightOf="@+id/CAMlz"
+        android:background="#FFFFFF"
+        android:text="@string/blankLine"
+        android:textSize="16sp" />
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -55,36 +57,76 @@
     android:textSize="32sp"
     android:id="@+id/CAMdate"
     android:background="#FFFFFF"/>
+
     <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="38sp"
-        android:prompt="@string/month_prompt"
-        android:entries="@array/months"
-        android:background="#FFFFFF"
         android:id="@+id/monthSpinner"
-        android:layout_toRightOf="@+id/CAMdate"
-        android:layout_toEndOf="@+id/CAMdate"
-        android:layout_below="@+id/CAMlz"
-        />
-    <Spinner
         android:layout_width="wrap_content"
         android:layout_height="38sp"
+        android:layout_above="@+id/CAMtimeTV"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_below="@+id/LZblankLine"
+        android:background="#FFFFFF"
+        android:entries="@array/months"
+        android:prompt="@string/month_prompt" />
+
+    <Spinner
         android:id="@+id/daySpinner"
-        android:layout_toRightOf="@+id/monthSpinner"
-        android:layout_toEndOf="@+id/monthSpinner"
-        android:layout_below="@+id/CAMlz"
-        android:entries="@array/days"
-        android:background="#FFFFFF"
-        android:prompt="@string/day_prompt" />
-    <Spinner
         android:layout_width="wrap_content"
         android:layout_height="38sp"
-        android:id="@+id/yearSpinner"
-        android:layout_toRightOf="@+id/daySpinner"
-        android:layout_toEndOf="@+id/daySpinner"
-        android:layout_below="@+id/CAMlz"
+        android:layout_above="@+id/CAMtimeTV"
+        android:layout_below="@+id/LZblankLine"
+        android:layout_toEndOf="@+id/monthSpinner"
+        android:layout_toRightOf="@+id/monthSpinner"
         android:background="#FFFFFF"
-        android:prompt="@string/year_prompt"
+        android:entries="@array/days"
+        android:prompt="@string/day_prompt" />
+
+    <Spinner
+        android:id="@+id/yearSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="38sp"
+        android:layout_alignBottom="@+id/daySpinner"
+        android:layout_below="@+id/LZblankLine"
+        android:layout_toEndOf="@+id/daySpinner"
+        android:layout_toRightOf="@+id/daySpinner"
+        android:background="#FFFFFF"
         android:entries="@array/years"
-        />
+        android:prompt="@string/year_prompt" />
+
+    <TextView
+        android:id="@+id/CAMtimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CAMdate"
+        android:layout_alignStart="@+id/CAMdate"
+        android:layout_below="@+id/CAMdate"
+        android:background="#FFFFFF"
+        android:text="@string/timeCAM"
+        android:textSize="32sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/CAMtimeTV"
+        android:layout_toEndOf="@+id/CAMtimeTV"
+        android:background="#FFFFFF"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:id="@+id/mCAM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CAMtimeTV"
+        android:layout_below="@+id/CAMlz"
+        android:layout_toEndOf="@+id/CAMdate"
+        android:layout_toLeftOf="@+id/monthSpinner"
+        android:layout_toRightOf="@+id/CAMdate"
+        android:layout_toStartOf="@+id/monthSpinner"
+        android:background="#FFFFFF"
+        android:text="@string/monthCAM"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="#000000"/>
 </RelativeLayout>
