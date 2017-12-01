@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/location"
-        android:layout_marginTop="16sp"
+        android:layout_marginTop="76sp"
         android:layout_marginLeft="16sp"
         android:layout_marginStart="16dp"
         android:textSize="32sp"
@@ -129,4 +129,72 @@
         android:textSize="16sp"
         android:gravity="center"
         android:textColor="#000000"/>
+
+    <Spinner
+        android:id="@+id/hourSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/CAMtimeTV"
+        android:layout_below="@+id/monthSpinner"
+        android:layout_toEndOf="@+id/CAMtimeTV"
+        android:layout_toRightOf="@+id/CAMtimeTV"
+        android:entries="@array/hours"
+        android:background="#FFFFFF"
+        android:prompt="@string/hour_prompt">
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="15sp"
+        android:layout_height="44sp"
+        android:layout_below="@+id/daySpinner"
+        android:layout_toEndOf="@+id/daySpinner"
+        android:layout_toRightOf="@+id/daySpinner"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="@string/time_colon"
+        android:id="@+id/timeColonTV"/>
+
+    <Spinner
+        android:id="@+id/minuteSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/timeColonTV"
+        android:layout_alignEnd="@+id/yearSpinner"
+        android:layout_alignRight="@+id/yearSpinner"
+        android:layout_below="@+id/yearSpinner"
+        android:layout_toEndOf="@+id/timeColonTV"
+        android:layout_toRightOf="@+id/timeColonTV"
+        android:background="#FFFFFF"
+        android:entries="@array/minute"
+        android:prompt="@string/minute_prompt">
+
+    </Spinner>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#8BC34A"
+        android:gravity="center"
+        android:padding="16sp"
+        android:text="@string/confirm_button"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="13dp"
+        android:background="#B71C1C"
+        android:gravity="center"
+        android:padding="16sp"
+        android:text="@string/cancel_button"
+        android:textSize="32sp" />
 </RelativeLayout>
